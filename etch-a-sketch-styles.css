@@ -1,6 +1,18 @@
 /* etch-a-sketch css styles*/
+body {
+    box-sizing: border-box;
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    bxox-sizing: border-box;
+}
+
 .square-style {
-    width: 50px;
+    box-sizing: border-box;
+    width: 6.25%;
     height: 50px;
     background-color: black;
+    border: 1px white solid;
 }
