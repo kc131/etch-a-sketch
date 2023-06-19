@@ -8,13 +8,28 @@ function createSquare() {
 function createAllSquares() {
 for (i=1; i<=256; i++) {
     createSquare();
-    /*let tempVar = "square" + i;  //delete this part if you end up not needing it
-    console.log(tempVar); */
-
 }
-
-
 }
-
 
 createAllSquares();
+const squareCollection = document.getElementsByClassName("square-style");
+
+for (i=0; i<squareCollection.length; i++) {
+    let aSquare = squareCollection[i];
+    aSquare.addEventListener("mouseover", function() {
+        mouseOver(aSquare);
+      });
+
+};
+
+function mouseOver(chosenDiv) {
+    chosenDiv.style.backgroundColor = "red";
+
+}
+
+
+
+
+
+
+
