@@ -1,19 +1,59 @@
 /* etch-a-sketch css styles*/
 body {
     box-sizing: border-box;
+    font-size: 1.8rem;
 }
 
-#main-container {
+#game-canvas {
     display: flex;
     flex-wrap: wrap;
     bxox-sizing: border-box;
 }
 
-.square-style {
+.qsquare-style {
     box-sizing: border-box;
-    width: 6.25%;
-    height: 50px;
+    width: 1%;
+    height: 10px;
     background-color: black;
-    border: 1px white solid;
+    /*border: 1px white solid;*/
+}
+
+#game-canvas div {
+    box-sizing: border-box;
+    width: 1%;
+    height: 10px;
+    /*border: 1px white solid;*/
+}
+
+.bg-black div {
+    background-color: black;
+}
+
+.bg-white div {
+    background-color: white;
+}
+
+.bg-red div {
+    background-color: red;
+}
+
+.bg-green div {
+    background-color: green;
+}
+
+.bg-yellow div {
+    background-color: yellow;
+}
+
+.bg-blue div {
+    background-color: blue;
+}
+
+.bg-purple div {
+    background-color: purple;
+}
+
+.bg-orange div {
+    background-color: orange;
 }
 

@@ -2,14 +2,47 @@
 <head lang="en">
 	<meta charset="utf-8">
 	<title>Our Etch-A-Sketch Game</title>
-	<link rel="stylesheet" href="etch-a-sketch-styles.css"
+	<link rel="stylesheet" href="etch-a-sketch-styles.css">
 
 
 </head>
 <body>
-<h1 id="main-header">Our Etch-A-Sketch Game</h1>
-<div id="main-container"></div>
-</body>
+<h1 id="main-heading">Our Etch-A-Sketch Game</h1>
+<div id="main-container">
+	<div id="game-container">
+		<div id="game-canvas" class="bg-black"></div>
+		<div id="game-prompts">
+			<label for="canvas-color-choice">Choose a canvas color:</label>
+			<select id="canvas-color-choice" name="canvas-color-choice">
+		      <option value="black">black</option>
+			  <option value="white">white</option>
+ 			  <option value="red">red</option>
+ 			  <option value="green">green</option>
+			  <option value="yellow">yellow</option>
+			  <option value="blue">blue</option>
+			  <option value="purple">purple</option>
+			  <option value="orange">orange</option>
+			</select>
+			<label for="ink-color-choice">Choose ink color:</label>
+			<select id="ink-color-choice" name="ink-color-choice">
+ 			  <option value="white">white</option>
+			   <option value="black">black</option>
+ 			  <option value="red">red</option>
+ 			  <option value="green">green</option>
+			   <option value="yellow">yellow</option>
+			   <option value="blue">blue</option>
+			   <option value="purple">purple</option>
+			   <option value="orange">orange</option>
+			</select>
+			<div>Reset ink?<input type="radio" id="reset-ink-yes" name="reset-ink" value="yes">
+			<label for="reset-ink-yes">Yes</label>
+			<input type="radio" id="reset-ink-no" name="reset-ink" value="no">
+			<label for="reset-ink-no">No</label></div>
+			<button id="submit-button" type="button">Update Choices</button>
+		</div>
+	</div>
+</div>
 <footer>
 	<script src="etch-a-sketch-script.js"></script>
 </footer>
+</body>
