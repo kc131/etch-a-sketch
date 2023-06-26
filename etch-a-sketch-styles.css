@@ -7,16 +7,16 @@ body {
 #game-canvas {
     display: flex;
     flex-wrap: wrap;
-    bxox-sizing: border-box;
+    width: 500px;
+    height: 500px;
 }
 
-.qsquare-style {
+/*.square-style {
     box-sizing: border-box;
     width: 1%;
     height: 10px;
     background-color: black;
-    /*border: 1px white solid;*/
-}
+}*/
 
 #game-canvas div {
     box-sizing: border-box;

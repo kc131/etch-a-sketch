@@ -23,12 +23,32 @@ const squareCollection = document.getElementsByClassName("square-style");
 for (i=0; i<squareCollection.length; i++) {
     let aSquare = squareCollection[i];
     aSquare.addEventListener("mouseover", function() {
-        mouseOver(aSquare);
-        });
+    mouseOver(aSquare);
+    });
+    };
+
+
+let ctrlKeyDown = false;
+document.onkeydown = (event) => {
+
+ if (event.key === 'Control') {
+    ctrlKeyDown = true;
 };
+}; 
+
+document.onkeyup = (event) => {
+    if (event.key === 'Control') {
+     ctrlKeyDown = false;  
+    }
+}
+
 
 function mouseOver(chosenDiv) {
+    if (ctrlKeyDown === true) {
     chosenDiv.style.backgroundColor = currentInkColor;
+    } else {
+        return;
+    }
 }
 
 submitButton.addEventListener("click", resetColors);
